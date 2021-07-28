@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surver Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Pagina de encuesta freeCodeCamp </h1>
+    <p id="description">Por Alberto Cristancho, como segunda prueba del certificado de Web Responsive Design</p>
+    <form action="" id="survey-form">
+       <div><label id="name-label" for="name">Nombre</label><br><input type="text" id="name" placeholder="Ingresa aqui tu nombre..." class="form-control" required></div>
+       <div><label id="email-label" for="email">Email</label><br><input type="email" id="email" placeholder="Ingresa aqui tu email..." class="form-control" required></div>
+       <div><label id="number-label" for="number">Edad (opcional)</label><br><input type="number" id="number" placeholder="Ingresa tu edad" class="form-control" min="10" max="100"></div>
+       <div><p>¿Que opcion describe mejor tu rol?</p><br><select id="dropdown" name="dropdown" class="form-drop" required>
+        <option disabled selected value>Selecciona tu rol actual</option>
+        <option value="student">Estudiante</option>
+        <option value="job">Trabajador tiempo completo</option>
+        <option value="learner">Trabajador y Estudiante</option>
+        <option value="preferNo">Prefiero no especificar</option>
+        <option value="other">Otro</option>
+      </select></div>
+       <div><p>¿Recomendarias freeCodeCamp a un amigo?</p><br> 
+    <label><input name="user-recommend" value="definitely" type="radio" class="input-radio" checked/>Definitivamente</label>
+    <label><input name="user-recommend" value="maybe"type="radio"class="input-radio"/>Tal vez</label>
+    <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio"/>No</label></div>
+       <div><p>¿Que es lo que mas te gusta de freeCodeCamp?</p><br><select id="most-like" name="mostLike" class="form-drop" required>
+        <option disabled selected value>Selecciona una opcion</option>
+        <option value="challenges">Desafios</option>
+        <option value="projects">Proyectos</option>
+        <option value="community">Comunidad</option>
+        <option value="openSource">Codigo Abierto</option>
+      </select></div>
+       <div><p>¿Que te gustaria que mejorara? (Todas las que apliquen)</p><br>
+        <label><input value="front-end-projects" type="checkbox" class="input-checkbox"/>Front-end projects</label>
+        <label><input value="back-end-projects"type="checkbox"class="input-checkbox"/>Back-end projects</label>
+        <label><input value="challenges" type="checkbox" class="input-checkbox"/>Challenges</label> 
+        <label><input value="video" type="checkbox" class="input-checkbox"/>Video</label>
+        <label><input value="wiki" type="checkbox" class="input-checkbox"/>Wiki</label>
+        <label><input value="forum" type="checkbox" class="input-checkbox"/>Forums</label></div>
+       <div><p>¿Algun comentario o sugerencias?</p><textarea class="form-sug"></textarea></div>
+       <div><button type="submit" id="submit">Enviar informacion</button>
+    </form>
+</body>
+</html>         
